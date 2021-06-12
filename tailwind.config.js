@@ -26,6 +26,13 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      winered: {
+        DEFAULT: '#A40C04'
+      },
+      textblack: {
+        DEFAULT: '#0e0e0e'
+      }
+
     },
     spacing: {
       px: '1px',
@@ -91,7 +98,7 @@ module.exports = {
       'gradient-to-bl': 'linear-gradient(to bottom left, var(--tw-gradient-stops))',
       'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
       'gradient-to-tl': 'linear-gradient(to top left, var(--tw-gradient-stops))',
-      'hero-pattern': "url('/IMG_20200724_181925.jpg')",
+      'hero-pattern': "url('/banner.jpg')",
     },
 
     backgroundOpacity: (theme) => theme('opacity'),
@@ -166,6 +173,7 @@ module.exports = {
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
+      custom: '0 5px 20px -10px #000'
     },
     contrast: {
       0: '0',
@@ -237,6 +245,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        '"Staatliches"',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -251,6 +260,7 @@ module.exports = {
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
+
       ],
       serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
