@@ -24,7 +24,7 @@ function Nav() {
             <div className={classNames("font-medium text-xl flex-grow w-full pt-6 lg:flex lg:items-center lg:w-auto lg:block lg:pt-0", { hidden: responsiv })} id="nav-content">
                 <ul className="items-center justify-end flex-1 list-reset lg:flex">
                     <li className="mr-2">
-                        <Link href="blog" ><p className="inline-block px-4 py-2 linkStyle">Blog</p></Link>
+                        <Link href="/blog" ><p className="inline-block px-4 py-2 linkStyle">Blog</p></Link>
                     </li>
                     <li className="mr-2">
                         <Link href="#" ><p className="inline-block px-4 py-2 linkStyle">Contact Me</p></Link>
