@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function CategoryCart({ category }) {
+    const imgPath = category.cover[0] ? process.env.STRAPIHOST + category.cover[0].url : '/mountain.jpg'
     return (
         <div className="container mx-auto my-5">
 
@@ -10,7 +11,7 @@ export default function CategoryCart({ category }) {
 
                 <div className="relative z-0 order-1 w-full overflow-hidden rounded-lg md:order-2 md:w-2/5 h-80 md:h-full md:rounded-none md:rounded-r-lg">
                     <div className="absolute inset-0 object-fill object-center w-full h-full bg-blue-400 bg-bottom bg-cover bg-opacity-30">
-                        <Image className='bg-blend-multiply' layout='fill' src={`${process.env.STRAPIHOST}${category.cover[0].url}`} />
+                        <Image className='bg-blend-multiply' layout='fill' src={imgPath} />
                     </div>
                     <div className="absolute inset-0 flex flex-col-reverse items-start justify-start h-full p-6 pb-6 md:hidden bg-gradient-to-b from-transparent via-transparent to-gray-900">
                         <h3 className="w-full mb-2 text-2xl font-bold leading-tight text-white">{category.title}</h3>

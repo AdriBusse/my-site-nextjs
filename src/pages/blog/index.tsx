@@ -4,6 +4,7 @@ import Image from 'next/image'
 import axios from 'axios';
 import CategoryCart from '../../components/CategoryCart';
 
+
 export default function blog({ categories }) {
     const { visible, toggle, setVisible } = useTheme();
     console.log(categories);
@@ -30,6 +31,7 @@ export default function blog({ categories }) {
                             <CategoryCart category={cat} />
                         </div>)
                     })}
+
                 </div>
 
             </div>
