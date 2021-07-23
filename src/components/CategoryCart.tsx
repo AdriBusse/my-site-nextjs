@@ -3,7 +3,9 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function CategoryCart({ category }) {
-    const imgPath = category.cover[0] !== undefined ? (process.env.STRAPIHOST + category.cover[0].url) : '/mountain.jpg'
+    const imgPath = category.cover[0]?.url !== undefined ? (process.env.STRAPIHOST + category.cover[0]?.url) : '/mountains.jpg'
+    console.log(category, imgPath);
+
     return (
         <div className="container mx-auto my-5">
 
