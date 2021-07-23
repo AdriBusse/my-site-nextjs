@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function category({ category }) {
     console.log(category);
-    const imgPath = category.cover[0]?.url !== undefined ? (process.env.STRAPIHOST + category.cover[0]?.url) : '/mountains.jpg'
+    const imgPath = category.cover && category.cover[0]?.url !== undefined ? (process.env.STRAPIHOST + category.cover[0]?.url) : '/mountains.jpg'
     category = category[0]
     return (
         <div className='w-full h-full'>
