@@ -41,7 +41,7 @@ export default function blog({ categories }) {
 }
 export async function getStaticProps() {
     // Call an external API endpoint to get posts.
-    const { data } = await axios.get('http://localhost:3003/categories')
+    const { data } = await axios.get(`${process.env.STRAPIHOST}/categories`)
 
 
 
